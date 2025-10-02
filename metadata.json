@@ -1,0 +1,5 @@
+{
+  "name": "AI Data Source Finder",
+  "description": "An intelligent assistant for engineers and data analysts to find relevant data sources. Describe your project, and the AI will search the web to suggest datasets, APIs, and observatories, and even generate code to access them.",
+  "requestFramePermissions": []
+}

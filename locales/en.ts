@@ -1,0 +1,37 @@
+
+export const en = {
+  appTitle: 'AI Data Scout',
+  appDescription: 'Describe your project, and the AI will find the best data sources for you.',
+  projectDescriptionLabel: 'Project Description',
+  projectDescriptionPlaceholder: 'e.g., Implementing a deep learning model to predict solar flares',
+  findDataSourcesButton: 'Find Data Sources',
+  searchingButton: 'Searching...',
+  suggestedDataSources: 'Suggested Data Sources',
+  errorPrompt: 'Please describe your project or objective.',
+  errorAI: 'An error occurred while communicating with the AI. Please try again.',
+  // DataSourceCard
+  accessMethod: 'Access Method:',
+  programmingLanguage: 'Programming Language',
+  generateCodeButton: 'Generate Code',
+  generatingCodeButton: 'Generating...',
+  errorCodeGeneration: 'Sorry, an error occurred while generating the code. Please try again.',
+  getDetailsButton: 'More Details',
+  hideDetailsButton: 'Hide Details',
+  loadingDetailsButton: 'Fetching...',
+  errorDetails: 'Error fetching details.',
+  dataFormatsLabel: 'Data Formats',
+  updateFrequencyLabel: 'Update Frequency',
+  usageRestrictionsLabel: 'Usage Restrictions',
+  documentationLabel: 'Documentation',
+  followUpPrompt: 'Have another question about this source?',
+  followUpPlaceholder: 'e.g., Is historical data from 2010 available?',
+  askButton: 'Ask',
+  askingButton: 'Asking...',
+  errorFollowUp: 'Error getting the answer.',
+  // CodeBlock
+  copy: 'Copy',
+  copied: 'Copied!',
+  copyError: 'Error',
+  // Language Switcher
+  toggleLanguage: 'تغییر به فارسی',
+};

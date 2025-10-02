@@ -1,0 +1,37 @@
+
+export const fa = {
+  appTitle: 'هوشمند کاشف داده',
+  appDescription: 'پروژه خود را توصیف کنید تا هوش مصنوعی بهترین منابع داده را برای شما پیدا کند.',
+  projectDescriptionLabel: 'توضیحات پروژه',
+  projectDescriptionPlaceholder: 'مثال: پیاده‌سازی یک مدل یادگیری عمیق برای پیش‌بینی شراره‌های خورشیدی',
+  findDataSourcesButton: 'پیدا کردن منابع داده',
+  searchingButton: 'در حال جستجو...',
+  suggestedDataSources: 'منابع داده پیشنهادی',
+  errorPrompt: 'لطفا پروژه یا هدف خود را توصیف کنید.',
+  errorAI: 'خطایی در ارتباط با هوش مصنوعی رخ داد. لطفا دوباره تلاش کنید.',
+  // DataSourceCard
+  accessMethod: 'روش دسترسی:',
+  programmingLanguage: 'زبان برنامه نویسی',
+  generateCodeButton: 'تولید کد',
+  generatingCodeButton: 'در حال تولید...',
+  errorCodeGeneration: 'متاسفانه در تولید کد خطایی رخ داد. لطفا دوباره تلاش کنید.',
+  getDetailsButton: 'جزئیات بیشتر',
+  hideDetailsButton: 'پنهان کردن جزئیات',
+  loadingDetailsButton: 'در حال دریافت...',
+  errorDetails: 'خطا در دریافت جزئیات.',
+  dataFormatsLabel: 'فرمت‌های داده',
+  updateFrequencyLabel: 'تناوب به‌روزرسانی',
+  usageRestrictionsLabel: 'محدودیت‌های استفاده',
+  documentationLabel: 'مستندات',
+  followUpPrompt: 'سؤال دیگری در مورد این منبع دارید؟',
+  followUpPlaceholder: 'مثلا: آیا داده‌های تاریخی از سال ۲۰۱۰ موجود است؟',
+  askButton: 'بپرس',
+  askingButton: 'در حال پرسش...',
+  errorFollowUp: 'خطا در دریافت پاسخ.',
+  // CodeBlock
+  copy: 'کپی',
+  copied: 'کپی شد!',
+  copyError: 'خطا',
+  // Language Switcher
+  toggleLanguage: 'Switch to English',
+};
