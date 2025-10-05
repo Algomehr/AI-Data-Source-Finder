@@ -34,4 +34,13 @@ export const fa = {
   copyError: 'خطا',
   // Language Switcher
   toggleLanguage: 'Switch to English',
+  // WebScraper
+  webScraperTitle: 'منبعی پیدا نکردید؟ یکی بسازید',
+  webScraperDescription: 'یک URL ارائه دهید و داده‌هایی را که می‌خواهید استخراج کنید توصیف کنید. هوش مصنوعی یک اسکریپت پایتون برای اسکرپ وب‌سایت و ایجاد مجموعه داده برای شما تولید می‌کند.',
+  webScraperUrlLabel: 'آدرس وب‌سایت',
+  webScraperUrlPlaceholder: 'https://example.com/data',
+  webScraperDataLabel: 'داده‌های مورد نیاز برای استخراج',
+  webScraperDataPlaceholder: 'مثال: تمام نام‌ها، قیمت‌ها و امتیازات محصولات از این صفحه',
+  generateScrapingCodeButton: 'تولید کد اسکرپینگ',
+  errorScrapingPrompt: 'لطفا هم URL و هم توضیحات داده‌های مورد نیاز برای استخراج را ارائه دهید.',
 };

@@ -79,6 +79,20 @@ Example Response:
 }
 `;
 
+const generateScrapingCodePrompt = (url: string, dataDescription: string) => `
+As an expert in web scraping, your task is to write a complete, runnable Python script to extract specific data from a given URL.
+
+URL to scrape: "${url}"
+Data to extract: "${dataDescription}"
+
+Instructions:
+1.  Use the 'requests' library for fetching the webpage and 'BeautifulSoup4' for parsing HTML. The script should include instructions for installing these libraries (e.g., pip install requests beautifulsoup4).
+2.  The script should be complete, runnable, and include all necessary imports.
+3.  Include comments to explain the key parts of the code, especially the logic for finding and extracting the data.
+4.  Print the extracted data in a structured format, like a list of dictionaries, and then demonstrate how to save it to a CSV file using the 'csv' module.
+5.  Add robust error handling for the HTTP request (e.g., check for a 200 status code and handle exceptions).
+6.  Output only the Python code block itself, with no surrounding text, explanations, or markdown code block markers like \`\`\`python\`\`\`.
+`;
 
 export const findDataSources = async (projectDescription: string): Promise<DataSource[]> => {
     try {
@@ -153,5 +167,18 @@ export const getFollowUpAnswer = async (source: DataSource, question: string): P
     } catch (error) {
         console.error("Error getting follow-up answer:", error);
         throw new Error("Failed to parse follow-up answer from AI response.");
+    }
+};
+
+export const generateScrapingCode = async (url: string, dataDescription: string): Promise<string> => {
+    try {
+        const response = await ai.models.generateContent({
+            model: "gemini-2.5-flash",
+            contents: generateScrapingCodePrompt(url, dataDescription),
+        });
+        return response.text.trim();
+    } catch (error) {
+        console.error("Error generating scraping code:", error);
+        throw new Error("Failed to generate scraping code from AI.");
     }
 };

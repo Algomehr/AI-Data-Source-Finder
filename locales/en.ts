@@ -34,4 +34,13 @@ export const en = {
   copyError: 'Error',
   // Language Switcher
   toggleLanguage: 'تغییر به فارسی',
+  // WebScraper
+  webScraperTitle: "Can't Find a Source? Create One",
+  webScraperDescription: 'Provide a URL and describe the data you want to extract. The AI will generate a Python script to scrape the website and create a dataset for you.',
+  webScraperUrlLabel: 'Website URL',
+  webScraperUrlPlaceholder: 'https://example.com/data',
+  webScraperDataLabel: 'Data to Extract',
+  webScraperDataPlaceholder: 'e.g., All product names, prices, and ratings from the page',
+  generateScrapingCodeButton: 'Generate Scraping Code',
+  errorScrapingPrompt: 'Please provide both a URL and a description of the data to extract.',
 };

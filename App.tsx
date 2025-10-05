@@ -1,9 +1,11 @@
+
 import React, { useState, useCallback } from 'react';
 import type { DataSource } from './types';
 import { findDataSources } from './services/geminiService';
 import { Loader } from './components/Loader';
 import { DataSourceCard } from './components/DataSourceCard';
 import { useLocale, TranslationKey } from './context/LocaleContext';
+import { WebScraper } from './components/WebScraper';
 
 const App: React.FC = () => {
   const { locale, setLocale, t } = useLocale();
@@ -104,6 +106,8 @@ const App: React.FC = () => {
             </div>
           </section>
         )}
+
+        {dataSources !== null && <WebScraper />}
       </main>
     </div>
   );
